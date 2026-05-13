@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SpaceWeave Anchor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #080e16;
+      color: #c8d8e8;
+      min-height: 100vh;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    /* ── Logo + header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 24px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(78, 196, 216, 0.3);
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-fallback {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 24px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #0d1a2e, #1a3048);
+      border: 1px solid rgba(78, 196, 216, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 40px rgba(78, 196, 216, 0.25);
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: #4ec4d8;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .updated {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #556677;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #8aa0b8;
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #8aa0b8;
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      color: #4ec4d8;
+      font-weight: 700;
+    }
+
+    .highlight {
+      background: rgba(78, 196, 216, 0.08);
+      border: 1px solid rgba(78, 196, 216, 0.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 12px 0;
+    }
+
+    .highlight p {
+      color: #4ec4d8;
+      font-weight: 600;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    strong { color: #c8d8e8; font-weight: 600; }
+
+    a {
+      color: #4ec4d8;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.05);
+      margin: 8px 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #3a4a5a;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-fallback">⚓</div>
+      <h1>SpaceWeave Anchor</h1>
+      <div class="subtitle">Privacy Policy</div>
+      <div class="updated">Effective date: June 2025</div>
+    </div>
+
+    <!-- Summary highlight -->
+    <div class="highlight" style="margin-bottom:16px;">
+      <p>&#x2714;&nbsp; SpaceWeave Anchor does not collect, store, or share any personal data. Ever.</p>
+    </div>
+
+    <!-- What the app does -->
+    <div class="card">
+      <h2><span class="icon">📡</span> What This App Does</h2>
+      <p>
+        SpaceWeave Anchor uses your device's camera and motion sensors to track
+        your head position in 3D space using ARKit (iOS) or ARCore (Android).
+        This position data is sent in real time over your local Wi-Fi network
+        to SpaceWeave — an immersive projection system on the same network.
+      </p>
+      <p>
+        The app is a local network utility. It has no backend, no accounts,
+        no analytics, and no internet connection.
+      </p>
+    </div>
+
+    <!-- Data we access -->
+    <div class="card">
+      <h2><span class="icon">🔍</span> Data We Access</h2>
+      <ul>
+        <li>
+          <strong>Camera</strong> — used exclusively by ARKit/ARCore to compute
+          your head position. Camera images are processed on-device and are
+          never stored, transmitted, or seen by anyone.
+        </li>
+        <li>
+          <strong>Motion sensors</strong> (gyroscope, accelerometer) — used
+          by ARKit/ARCore internally for tracking accuracy. Never stored or sent.
+        </li>
+        <li>
+          <strong>Local network</strong> — position coordinates (X, Y, Z in metres)
+          are sent as UDP packets to an IP address you configure. This data
+          goes only to your own SpaceWeave system on your local network.
+        </li>
+        <li>
+          <strong>App settings</strong> — your chosen IP address, port number,
+          and send rate are saved locally on your device using standard
+          device storage (SharedPreferences / UserDefaults). This data never
+          leaves your device.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Data we do NOT collect -->
+    <div class="card">
+      <h2><span class="icon">🚫</span> Data We Do Not Collect</h2>
+      <ul>
+        <li>No personal information (name, email, phone number)</li>
+        <li>No location (GPS) data</li>
+        <li>No device identifiers or advertising IDs</li>
+        <li>No usage analytics or crash reports sent to any server</li>
+        <li>No camera images or video footage</li>
+        <li>No biometric data of any kind</li>
+        <li>No data is uploaded to any cloud service or third party</li>
+      </ul>
+    </div>
+
+    <!-- Third parties -->
+    <div class="card">
+      <h2><span class="icon">🤝</span> Third-Party Services</h2>
+      <p>
+        SpaceWeave Anchor does not integrate any third-party SDKs for analytics,
+        advertising, crash reporting, or data collection.
+      </p>
+      <p>
+        The following platform-provided frameworks are used:
+      </p>
+      <ul>
+        <li><strong>ARKit</strong> (Apple) — on-device AR tracking on iOS. Apple's own privacy policy governs ARKit.</li>
+        <li><strong>ARCore</strong> (Google) — on-device AR tracking on Android. Google's own privacy policy governs ARCore.</li>
+      </ul>
+      <p>
+        Neither ARKit nor ARCore transmit camera or sensor data off your device
+        in the context of this app.
+      </p>
+    </div>
+
+    <!-- Permissions -->
+    <div class="card">
+      <h2><span class="icon">🔐</span> Permissions Explained</h2>
+      <ul>
+        <li>
+          <strong>Camera (required)</strong> — ARKit and ARCore need the camera
+          to compute your position in space. Without camera access the app
+          cannot track position.
+        </li>
+        <li>
+          <strong>Local Network (iOS)</strong> — required to send position data
+          over UDP to your SpaceWeave system on the same Wi-Fi network.
+        </li>
+        <li>
+          <strong>Internet (Android)</strong> — the INTERNET permission is used
+          solely for local UDP communication on your home/venue network.
+          No internet traffic is generated.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Children -->
+    <div class="card">
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>
+        SpaceWeave Anchor does not collect any data from anyone, including
+        children under the age of 13. The app is a local network tool with
+        no data collection of any kind.
+      </p>
+    </div>
+
+    <!-- Data retention -->
+    <div class="card">
+      <h2><span class="icon">🗑️</span> Data Retention &amp; Deletion</h2>
+      <p>
+        The only data stored by the app is your connection settings
+        (IP address, port, send rate) saved locally on your device.
+        You can delete this data at any time by uninstalling the app.
+        No data exists on any server to delete.
+      </p>
+    </div>
+
+    <!-- Changes -->
+    <div class="card">
+      <h2><span class="icon">📝</span> Changes to This Policy</h2>
+      <p>
+        If this privacy policy is ever updated, the new version will be
+        published at the same URL with an updated effective date.
+        Since we collect no data, changes are unlikely to affect your privacy.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2><span class="icon">✉️</span> Contact</h2>
+      <p>
+        If you have any questions about this privacy policy or the app,
+        please contact:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:sagorahamed995@gmail.com">sagorahamed995@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 SpaceWeave Anchor &nbsp;·&nbsp; All rights reserved
+    </div>
+
+  </div>
+</body>
+</html>
